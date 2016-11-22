@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
     <title>Ayakisi mobil uygulama tanitim sayfasi</title>
 
@@ -33,6 +34,72 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<script>
+function showText(id,delay){
+var elem=document.getElementById(id);
+setTimeout(function(){elem.style.visibility='visible';},delay*1000)
+}
+window.onload=function(){
+showText('delayedText1',1);
+showText('delayedText2',2);
+showText('delayedText3',3);
+}
+</script>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 25.0%;
+    padding: 6px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    font-size: 16px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+</style>
 
 </head>
 
@@ -45,7 +112,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="ayakisi-logo.png" class="logo img-responsive"></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="ayak.png" class="logo img-responsive"></a>
                 <!-- <a class="navbar-brand page-scroll" href="#page-top">Ayakisi</a> -->            </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,12 +135,35 @@
     </nav>
 
     <header>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
                     <div class="header-content">
+
                         <div class="header-content-inner">
-                            <h1>Zamanını değerlendir ve para kazan zamanın yoksada zamanı olan birisini bul!</h1>
+                          <div class="w3-container w3-left w3-animate-left">
+                            <h1><text-align: left><font color="#ed7a23">Adım Adım İlerle!</h1>
+                          </div>
+                          <div id="delayedText1" style="visibility:hidden" class="w3-container w3-animate-left">
+                            <h2><font color="#ed7a23">Zamanını değerlendir!</h1>
+                          </div>
+
+                          <div id="delayedText2" style="visibility:hidden" class="w3-container  w3-animate-left">
+                            <h2><font color="#ed7a23">Ek gelir kazan</h1>
+                          </div>
+
+                          <div id="delayedText3" style="visibility:hidden">
+                          <div class="w3-container w3-center w3-animate-left">
+                            <h2><text-align: left><font color="#ed7a23">Istedigin zaman istedigin yerde!</h1>
+                          </div>
+                        </div>
+
+
+                          <!-- <h1>is ilani ver</h1> -->
+
+
+                            <!-- <h1>Zamanını değerlendir ve para kazan zamanın yoksada zamanı olan birisini bul!</h1> -->
  <!--script src="https://form.jotformeu.com/static/feedback2.js?3.3.REV" type="text/javascript"> var JFL_62832443667361 = new JotformFeedback({ formId: '62832443667361', base: 'https://form.jotformeu.com/', windowTitle: 'Haberdar Ol!', background: '#FFA500', fontColor: '#FFFFFF', type: 'false', height: 500, width: 700, openOnLoad: true }); </script-->                        </div>
                     </div>
                 </div>
@@ -82,7 +172,7 @@
                         <div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
                                 <div class="screen">
-                                    
+
     <iframe
       id="JotFormIFrame-62972453644362"
       onload="window.parent.scrollTo(0,0)"
@@ -179,22 +269,56 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
+            <div align="center">
+            <div class="columns">
+            <ul class="price">
+            <a class="center"><img src="img/gorev_sec.jpg" alt=""></a>
+           <li>Talep edilen görevleri ve fiyatlarını görüntüleyebilir, dilersen sende görev açabilirsin.</li>
+           <li class="grey"><a>GÖREVLERİ GÖRÜNTÜLE</a></li>
+           </ul>
+</div>
+</div>
+<div align="center">
+<div class="columns">
+  <ul class="price">
+    <a class="center"><img src="img/esles.jpg" alt=""></a>
+    <li>Burada yapmak istediğin görevi seçebilir veya oluşturduğun göreve gelen taleplerden istediğini kabul edebilirsin.</li>
+    <li class="grey"><a>EŞLEŞ</a></li>
+  </ul>
+</div>
+</div>
+<div align="center">
+<div class="columns">
+  <ul class="price">
+    <a class="center"><img src="img/hazirlan.jpg" alt=""></a>
+    <li>Tamamlanacak görevin ayrıntılarını ve zamanını bu adımda gerçekleştirebilirsin.</li>
+    <li class="grey"><a>RANDEVULAŞ</a></li>
+  </ul>
+</div>
+</div>
+<div align="center">
+<div class="columns">
+  <ul class="price">
+    <a class="center"><img src="img/gorev_tamamlandi.jpg" alt=""></a>
+    <li>Görevin tamamlandıysa, yorumlarını yapabilirsin. Görev tamaladıysan da deneyimini sosyal medyada paylaşabilirsin.</li>
+    <li class="grey"><a>GÖREVLERİ TAMAMLANDI</a></li>
+  </ul>
+</div>
+</div>
+            <!--div class="row">
+                <!--div class="col-md-4">
                     <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
+                        <!--div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
                                 <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
                                     <img src="img/ayakisi-is.png" class="img-responsive" alt=""> </div>
                                 <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
                             </div>
-                        </div>
+                        </div->
                     </div>
-                </div>
-                <div class="col-md-8">
+                </div-->
+                <!--div class="col-md-6">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
@@ -229,14 +353,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
             </div>
     </section>
  <script src="https://form.jotformeu.com/static/feedback2.js?3.3.REV" type="text/javascript"> new JotformFeedback({ formId: "62832443667361", buttonText: "Görev Yap!", base: "https://form.jotformeu.com/", background: "#F59202", fontColor: "#FFFFFF", buttonSide: "left", buttonAlign: "center", type: false, width: 700, height: 500 }); </script>
     <section class="cta">
         <div class="cta-content">
             <div class="container">
-                <h2>Stop waiting.<br>Start building.</h2>
+                <!-- <h2>Stop waiting.<br>Start building.</h2> -->
                 <a href="#contact"></a>
             </div>
         </div>
@@ -261,9 +385,9 @@
     </section>
 
     <footer>
-        <!--div class="container">
+        <div class="container">
             <p>&copy; Milk Lab34 2016</p>
-            <ul class="list-inline">
+            <!-- <ul class="list-inline">
                 <li>
                     <a href="#">Privacy</a>
                 </li>
@@ -273,10 +397,16 @@
                 <li>
                     <a href="#">FAQ</a>
                 </li>
-            </ul>
-        </div-->
+            </ul> -->
+        </div>
     </footer>
 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/script.js"></script>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -288,6 +418,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+    <!-- Fadein JavaScript -->
+    <script src="js/wow.js"></script>
 
 </body>
 
